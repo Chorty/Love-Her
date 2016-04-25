@@ -6,11 +6,14 @@
 //  Copyright © 2015 Treehouse. All rights reserved.
 //
 
+import Foundation
 import UIKit
+import GameKit
 
 class ViewController: UIViewController {
     
 
+    @IBOutlet weak var funFactSwitch: UISwitch!
     @IBOutlet weak var funFactLabel: UILabel!
     
     @IBOutlet weak var funFactButton: UIButton!
@@ -20,14 +23,16 @@ class ViewController: UIViewController {
   
     
     override func viewDidLoad() {
+        view.backgroundColor = UIColor(red: 1/255.0, green: 1/255.0, blue: 1/255.0, alpha: 1.0)
         super.viewDidLoad()
         let dupeColor = funFactButton.tintColor
         let dupeFact: String? = funFactLabel.text
         let randomC = ColorModel().getRandomColor(dupeColor)
         let randomF = FactModel().getRandomFact(dupeFact!)
-        view.backgroundColor = randomC //ColorModel().getRandomColor(dupeColor)
+        //view.backgroundColor = randomC //ColorModel().getRandomColor(dupeColor)
         funFactButton.tintColor = randomC //ColorModel().getRandomColor()
         funFactLabel.text = randomF
+        //funFactSwitch.setOn(true, animated: true)
         
     }
 
@@ -40,71 +45,26 @@ class ViewController: UIViewController {
     
     
     @IBAction func showFunFact() {
-
-        let dupeColor = funFactButton.tintColor
-        let dupeFact: String? = funFactLabel.text
-        let randomC = ColorModel().getRandomColor(dupeColor)
-        let randomF = FactModel().getRandomFact(dupeFact!)
-        view.backgroundColor = randomC //ColorModel().getRandomColor(dupeColor)
-        funFactButton.tintColor = randomC //ColorModel().getRandomColor()
-        funFactLabel.text = randomF
-        //print(dupeColor)
-        //print(randomC)
-        //print(dupeFact)
-        //print(randomF)
-        
-        //let randomColor = ColorModel().getRandomColor(dupeColor) //= funFactButton.tintColor
-        //let randomFact: String = factModel.getRandomFact(dupeFact!)
-        //randomFact = factModel.getRandomFact()
-        //let randomC = ColorModel().getRandomColor().toHexString()
-        //print(UIColor(hexString: randomColor.toHexString()))
-        //print(randomColor.toHexString())//.toHexString())
-        /*
-        let viewBackC = funFactButton.tintColor.toHexString()
-        print(viewBackC)
-        print(randomColor.toHexString())
-        if randomColor.toHexString() == viewBackC {
-        print("color")
-            let randomC = ColorModel().getRandomColor(dupeColor)
-            view.backgroundColor = randomC //ColorModel().getRandomColor(dupeColor)
-            funFactButton.tintColor = randomC //ColorModel().getRandomColor()
-
-            //    print(viewBackC)
-            
-            //print(UIColor(hexString: randomColor.toHexString()).toHexString())
-            //print(randomColor.toHexString())//randomColor = ColorModel().getRandomColor()
-            //showFunFact()
-        
-            //randomFact = factModel.getRandomFact()
-            //print(ColorModel().getRandomColor())
-            //view.backgroundColor = randomColor
-            //funFactButton.tintColor = randomColor
-            //funFactLabel.text = randomFact
-            showFunFact()
-            //view.backgroundColor = randomColor
-            //funFactButton.tintColor = randomColor
-            funFactLabel.text = factModel.getRandomFact(dupeFact!)
-        } else if funFactLabel.text == randomFact {
-            print("duplicate fact")
-            //showFunFact()
-            //view.backgroundColor = randomColor
-            //funFactButton.tintColor = randomColor
-            //funFactLabel.text = factModel.getRandomFact()
-            showFunFact()
-            
-            view.backgroundColor = randomColor
-            funFactButton.tintColor = randomColor
-            funFactLabel.text = factModel.getRandomFact(dupeFact!)
+        if funFactSwitch.on == true {
+           print(funFactSwitch.on)
+            let randomC = UIColor(red: 1/255.0, green: 1/255.0, blue: 1/255.0, alpha: 1)
+            view.backgroundColor = randomC
+            funFactButton.tintColor = randomC
         } else {
-            print("else")
-            
-            
-            view.backgroundColor = randomColor
-            funFactButton.tintColor = randomColor
-            funFactLabel.text = factModel.getRandomFact(dupeFact!)
+        let dupeColor = funFactButton.tintColor
+        //let dupeFact: String? = funFactLabel.text
+        //let switchState: Bool = false
+        //print(funFactSwitch.on)
+        
+            let randomC = ColorModel().getRandomColor(dupeColor)
+            view.backgroundColor = randomC
+            funFactButton.tintColor = randomC
         }
+        let dupeFact: String? = funFactLabel.text
+        let randomF = FactModel().getRandomFact(dupeFact!)
+        funFactLabel.text = randomF
+        
     }
-    */
-}
-}
 
+
+}

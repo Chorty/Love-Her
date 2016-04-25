@@ -22,9 +22,7 @@ struct ColorModel {
     ]
     
     func getRandomColor(dupeColor: UIColor) -> UIColor {
-       //let generator: RandomNumberGenerator
-        //random().advancedBy(1, limit: colors.count)
-        //var randomNumber = arc4rand //random_uniform(colors.count)
+       
         var randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(colors.count)
         while colors[randomNumber] == dupeColor {
             print("Dup Func Color \(colors[randomNumber])")
