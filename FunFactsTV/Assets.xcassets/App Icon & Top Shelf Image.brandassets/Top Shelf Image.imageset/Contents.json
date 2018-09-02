@@ -2,8 +2,13 @@
   "images" : [
     {
       "idiom" : "tv",
-      "filename" : "1920x720@2.png",
+      "filename" : "1920x720@TopShelf.png",
       "scale" : "1x"
+    },
+    {
+      "idiom" : "tv",
+      "filename" : "3840x1440@TopShelf.png",
+      "scale" : "2x"
     }
   ],
   "info" : {

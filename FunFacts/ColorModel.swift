@@ -25,10 +25,10 @@ struct ColorModel {
        //let generator: RandomNumberGenerator
         //random().advancedBy(1, limit: colors.count)
         //var randomNumber = arc4rand //random_uniform(colors.count)
-        var randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(colors.count)
+        var randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: colors.count) //nextIntWithUpperBound(colors.count)
         while colors[randomNumber] == dupeColor {
             print("Dup Func Color \(colors[randomNumber])")
-            randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(colors.count)
+            randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: colors.count)
         }
         return colors[randomNumber]
     }

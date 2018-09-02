@@ -27,10 +27,10 @@ struct FactModel {
 
     func getRandomFact(dupeFact: String) -> String {
         
-        var randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(facts.count)
+        var randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: facts.count)
         while facts[randomNumber] == dupeFact {
             print("Dup Fact Func")
-            randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(facts.count)
+            randomNumber = GKRandomSource.sharedRandom().nextInt(upperBound: facts.count)
         }
         return facts[randomNumber]
     }

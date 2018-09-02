@@ -23,8 +23,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let dupeColor = funFactButton.tintColor
         let dupeFact: String? = funFactLabel.text
-        let randomC = ColorModel().getRandomColor(dupeColor)
-        let randomF = FactModel().getRandomFact(dupeFact!)
+        let randomC = ColorModel().getRandomColor(dupeColor: dupeColor!)
+        let randomF = FactModel().getRandomFact(dupeFact: dupeFact!)
         view.backgroundColor = randomC //ColorModel().getRandomColor(dupeColor)
         funFactButton.tintColor = randomC //ColorModel().getRandomColor()
         funFactLabel.text = randomF
@@ -43,8 +43,8 @@ class ViewController: UIViewController {
 
         let dupeColor = funFactButton.tintColor
         let dupeFact: String? = funFactLabel.text
-        let randomC = ColorModel().getRandomColor(dupeColor)
-        let randomF = FactModel().getRandomFact(dupeFact!)
+        let randomC = ColorModel().getRandomColor(dupeColor: dupeColor!)
+        let randomF = FactModel().getRandomFact(dupeFact: dupeFact!)
         view.backgroundColor = randomC //ColorModel().getRandomColor(dupeColor)
         funFactButton.tintColor = randomC //ColorModel().getRandomColor()
         funFactLabel.text = randomF
