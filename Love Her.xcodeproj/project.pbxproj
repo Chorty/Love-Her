@@ -88,7 +88,7 @@
 		301A3E21213C2D780037CE0F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		302119C3213C9D6D006CF0F4 /* FactModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModelWatch.swift; sourceTree = "<group>"; };
 		302119C5213C9F79006CF0F4 /* ColorModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModelWatch.swift; sourceTree = "<group>"; };
-		3062365E1CB308B000D33F10 /* FunFactsTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFactsTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3062365E1CB308B000D33F10 /* FunFactsTVW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFactsTVW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306236601CB308B000D33F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		306236621CB308B000D33F10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		306236651CB308B000D33F10 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -186,7 +186,7 @@
 			isa = PBXGroup;
 			children = (
 				CDA9563A1BD9329E00CB9023 /* Love Her.app */,
-				3062365E1CB308B000D33F10 /* FunFactsTV.app */,
+				3062365E1CB308B000D33F10 /* FunFactsTVW.app */,
 				301A3E07213C2D760037CE0F /* FunFactsWatch2.app */,
 				301A3E13213C2D770037CE0F /* FunFactsWatch2 Extension.appex */,
 			);
@@ -245,9 +245,9 @@
 			productReference = 301A3E13213C2D770037CE0F /* FunFactsWatch2 Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		3062365D1CB308B000D33F10 /* FunFactsTV */ = {
+		3062365D1CB308B000D33F10 /* FunFactsTVW */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 3062366A1CB308B100D33F10 /* Build configuration list for PBXNativeTarget "FunFactsTV" */;
+			buildConfigurationList = 3062366A1CB308B100D33F10 /* Build configuration list for PBXNativeTarget "FunFactsTVW" */;
 			buildPhases = (
 				3062365A1CB308B000D33F10 /* Sources */,
 				3062365B1CB308B000D33F10 /* Frameworks */,
@@ -257,9 +257,9 @@
 			);
 			dependencies = (
 			);
-			name = FunFactsTV;
+			name = FunFactsTVW;
 			productName = FunFactsTV;
-			productReference = 3062365E1CB308B000D33F10 /* FunFactsTV.app */;
+			productReference = 3062365E1CB308B000D33F10 /* FunFactsTVW.app */;
 			productType = "com.apple.product-type.application";
 		};
 		CDA956391BD9329E00CB9023 /* Love Her */ = {
@@ -344,7 +344,7 @@
 			projectRoot = "";
 			targets = (
 				CDA956391BD9329E00CB9023 /* Love Her */,
-				3062365D1CB308B000D33F10 /* FunFactsTV */,
+				3062365D1CB308B000D33F10 /* FunFactsTVW */,
 				301A3E06213C2D760037CE0F /* FunFactsWatch2 */,
 				301A3E12213C2D770037CE0F /* FunFactsWatch2 Extension */,
 			);
@@ -646,8 +646,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = appletvos9.2;
-				"SDKROOT[arch=*]" = appletvos9.2;
+				SDKROOT = appletvos;
+				"SDKROOT[arch=*]" = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -669,8 +669,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
-				SDKROOT = appletvos9.2;
-				"SDKROOT[arch=*]" = appletvos9.2;
+				SDKROOT = appletvos;
+				"SDKROOT[arch=*]" = appletvos;
 				SUPPORTED_PLATFORMS = "appletvsimulator appletvos";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -817,7 +817,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		3062366A1CB308B100D33F10 /* Build configuration list for PBXNativeTarget "FunFactsTV" */ = {
+		3062366A1CB308B100D33F10 /* Build configuration list for PBXNativeTarget "FunFactsTVW" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				3062366B1CB308B100D33F10 /* Debug */,
