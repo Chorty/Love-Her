@@ -10,11 +10,13 @@
 		301A3E0B213C2D760037CE0F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 301A3E09213C2D760037CE0F /* Interface.storyboard */; };
 		301A3E0D213C2D770037CE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301A3E0C213C2D770037CE0F /* Assets.xcassets */; };
 		301A3E14213C2D770037CE0F /* FunFactsWatch2 Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 301A3E13213C2D770037CE0F /* FunFactsWatch2 Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		301A3E19213C2D770037CE0F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A3E18213C2D770037CE0F /* InterfaceController.swift */; };
+		301A3E19213C2D770037CE0F /* FunInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A3E18213C2D770037CE0F /* FunInterfaceController.swift */; };
 		301A3E1B213C2D770037CE0F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A3E1A213C2D770037CE0F /* ExtensionDelegate.swift */; };
 		301A3E1D213C2D770037CE0F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301A3E1C213C2D770037CE0F /* NotificationController.swift */; };
 		301A3E1F213C2D780037CE0F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 301A3E1E213C2D780037CE0F /* Assets.xcassets */; };
 		301A3E24213C2D780037CE0F /* FunFactsWatch2.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 301A3E07213C2D760037CE0F /* FunFactsWatch2.app */; };
+		302119C4213C9D6D006CF0F4 /* FactModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302119C3213C9D6D006CF0F4 /* FactModelWatch.swift */; };
+		302119C6213C9F79006CF0F4 /* ColorModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302119C5213C9F79006CF0F4 /* ColorModelWatch.swift */; };
 		306236661CB308B000D33F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306236641CB308B000D33F10 /* Main.storyboard */; };
 		306236681CB308B100D33F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306236671CB308B100D33F10 /* Assets.xcassets */; };
 		306236711CB32C5800D33F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306236601CB308B000D33F10 /* AppDelegate.swift */; };
@@ -78,12 +80,14 @@
 		301A3E0C213C2D770037CE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301A3E0E213C2D770037CE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301A3E13213C2D770037CE0F /* FunFactsWatch2 Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "FunFactsWatch2 Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		301A3E18213C2D770037CE0F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		301A3E18213C2D770037CE0F /* FunInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunInterfaceController.swift; sourceTree = "<group>"; };
 		301A3E1A213C2D770037CE0F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		301A3E1C213C2D770037CE0F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		301A3E1E213C2D780037CE0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		301A3E20213C2D780037CE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		301A3E21213C2D780037CE0F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		302119C3213C9D6D006CF0F4 /* FactModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModelWatch.swift; sourceTree = "<group>"; };
+		302119C5213C9F79006CF0F4 /* ColorModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModelWatch.swift; sourceTree = "<group>"; };
 		3062365E1CB308B000D33F10 /* FunFactsTV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFactsTV.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306236601CB308B000D33F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		306236621CB308B000D33F10 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -141,12 +145,14 @@
 		301A3E17213C2D770037CE0F /* FunFactsWatch2 Extension */ = {
 			isa = PBXGroup;
 			children = (
-				301A3E18213C2D770037CE0F /* InterfaceController.swift */,
+				301A3E18213C2D770037CE0F /* FunInterfaceController.swift */,
 				301A3E1A213C2D770037CE0F /* ExtensionDelegate.swift */,
 				301A3E1C213C2D770037CE0F /* NotificationController.swift */,
 				301A3E1E213C2D780037CE0F /* Assets.xcassets */,
 				301A3E20213C2D780037CE0F /* Info.plist */,
 				301A3E21213C2D780037CE0F /* PushNotificationPayload.apns */,
+				302119C3213C9D6D006CF0F4 /* FactModelWatch.swift */,
+				302119C5213C9F79006CF0F4 /* ColorModelWatch.swift */,
 			);
 			path = "FunFactsWatch2 Extension";
 			sourceTree = "<group>";
@@ -390,8 +396,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				301A3E1D213C2D770037CE0F /* NotificationController.swift in Sources */,
+				302119C4213C9D6D006CF0F4 /* FactModelWatch.swift in Sources */,
 				301A3E1B213C2D770037CE0F /* ExtensionDelegate.swift in Sources */,
-				301A3E19213C2D770037CE0F /* InterfaceController.swift in Sources */,
+				302119C6213C9F79006CF0F4 /* ColorModelWatch.swift in Sources */,
+				301A3E19213C2D770037CE0F /* FunInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,7 +503,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVi.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -532,7 +540,7 @@
 				INFOPLIST_FILE = "FunFactsWatch2 Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVi.watchkitapp.watchkitextension;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW.watchkitapp.watchkitextension;
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -573,7 +581,7 @@
 				INFOPLIST_FILE = FunFactsWatch2/Info.plist;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVi.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -613,7 +621,7 @@
 				IBSC_MODULE = FunFactsWatch2_Extension;
 				INFOPLIST_FILE = FunFactsWatch2/Info.plist;
 				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVi.watchkitapp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
@@ -635,7 +643,7 @@
 				DEVELOPMENT_TEAM = S579MWX55N;
 				INFOPLIST_FILE = FunFactsTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = appletvos9.2;
@@ -658,7 +666,7 @@
 				DEVELOPMENT_TEAM = S579MWX55N;
 				INFOPLIST_FILE = FunFactsTV/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				SDKROOT = appletvos9.2;
@@ -761,7 +769,7 @@
 				INFOPLIST_FILE = FunFacts/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW;
 				PRODUCT_NAME = "Love Her";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.2;
@@ -780,7 +788,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVi;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MattJoslin.FunFactsTVW;
 				PRODUCT_NAME = "Love Her";
 				PROVISIONING_PROFILE = "";
 				SWIFT_VERSION = 4.2;

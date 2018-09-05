@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14313.13.2" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
-    <device id="watch38" orientation="portrait">
+    <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,24 +11,28 @@
         <!--InterF-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" userLabel="InterF" customClass="InterfaceController" customModule="FunFactsWatch2" customModuleProvider="target">
+                <controller id="AgC-eL-Hgc" userLabel="InterF" customClass="FunInterfaceController" customModule="FunFactsWatch2_Extension">
                     <items>
                         <label width="136" alignment="left" text="Love You" id="AZi-ZA-7Re"/>
-                        <separator alignment="left" id="Wra-TF-4fR"/>
-                        <label width="136" alignment="left" text="Label" id="SB8-36-BEN"/>
-                        <button width="1" alignment="left" title="Button" id="S0l-nj-vAS">
+                        <label width="1" alignment="left" semanticContentAttribute="spatial" text="Label" textAlignment="left" numberOfLines="5" id="SB8-36-BEN"/>
+                        <button width="1" height="37" alignment="left" title="Button" id="S0l-nj-vAS">
                             <connections>
-                                <action selector="showFunFactTV" destination="AgC-eL-Hgc" id="qWI-wH-CfG"/>
+                                <action selector="showFunFactWatch" destination="AgC-eL-Hgc" id="Oky-aq-gy8"/>
                             </connections>
                         </button>
                     </items>
+                    <variation key="default">
+                        <mask key="items">
+                            <exclude reference="AZi-ZA-7Re"/>
+                        </mask>
+                    </variation>
                     <connections>
                         <outlet property="funFactButtonWatch" destination="S0l-nj-vAS" id="Roh-yb-iez"/>
                         <outlet property="funFactLabelWatch" destination="SB8-36-BEN" id="Dmr-di-fkH"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="219.69230769230771" y="344.79487179487182"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">

@@ -10,9 +10,12 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class FunInterfaceController: WKInterfaceController {
     @IBOutlet var funFactLabelWatch: WKInterfaceLabel!
     @IBOutlet var funFactButtonWatch: WKInterfaceButton!
+    
+    let factModelWatch = FactModelWatch()
+    let colorModelWatch = ColorModelWatch()
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
@@ -23,15 +26,16 @@ class InterfaceController: WKInterfaceController {
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
-        let dupeColorWatch = funFactButtonWatch.tintColor
+        super.willActivate()
+        /* let dupeColorWatch = funFactButtonWatch.setTitle(funFactButtonWatch)
         let dupeFactWatch: String? = funFactLabelWatch.text
-        let randomCWatch = ColorModelWatch().getRandomColor(dupeColorWatch: dupeColorWatch!)
+        let randomCWatch = ColorModelWatch().getRandomColorWatch(dupeColorWatch: dupeColorWatch!)
         let randomFWatch = FactModelWatch().getRandomFactWatch(dupeFactWatch: dupeFactWatch!)
         view.backgroundColor = randomCWatch //ColorModel().getRandomColor(dupeColor)
         funFactButtonWatch.tintColor = randomCWatch //ColorModel().getRandomColor()
         funFactLabelWatch.text = randomFWatch
-        super.willActivate()
         
+        */
     }
     
     override func didDeactivate() {
@@ -40,13 +44,17 @@ class InterfaceController: WKInterfaceController {
     }
     
     @IBAction func showFunFactWatch() {
-        let dupeColorWatch = funFactButtonWatch.tintColor
-        let dupeFactWatch: String? = funFactLabelWatch.text
-        let randomCWatch = ColorModelWatch().getRandomColorWatch(dupeColorWatch)
-        let randomFWatch = funFactLabelWatch().getRandomFactWatch(dupeFactWatch!)
-          backgroundColor = randomCWatch
-        funFactButtonWatch.tintColor = randomCWatch //ColorModel().getRandomColor()
-        funFactLabelWatch.text = randomFWatch
+        
+        //let dupeColorWatch = colorModelWatch.colorsWatch
+        //let dupeFactWatch =
+        //let randomCWatch = colorModelWatch.getRandomColorWatch(dupeColorWatch: Int(UInt32(arc4random_uniform(dupeColorWatch))) //arc4random_uniform(UInt32(dupeColorWatch)))
+        //let randomFWatch = FactModelWatch().factsWatch(dupeFactWatch).getRandomFactWatch()
+        //let randomFWatch = funFactLabelWatch().getRandomFactWatch(dupeFactWatch!)
+        //self.funFactButtonWatch.backgroundColor = randomCWatch
+        //funFactButtonWatch.tintColor = randomCWatch //ColorModel().getRandomColor()
+        funFactLabelWatch.setText(factModelWatch.getRandomFactWatch()) //.getRandomFactWatch(dupeFact!)))
+        
+        
     }
 
 }
