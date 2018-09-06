@@ -17,8 +17,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         let dupeColor = funFactButtonTV.tintColor
         let dupeFact: String? = funFactLabelTV.text
-        let randomC = ColorModelTV().getRandomColorTV(dupeColor)
-        let randomF = FactModelTV().getRandomFactTV(dupeFact!)
+        let randomC = ColorModelTV().getRandomColorTV(dupeColor: dupeColor!)
+        let randomF = FactModelTV().getRandomFactTV(dupeFact: dupeFact!)
         view.backgroundColor = randomC
         funFactButtonTV.tintColor = randomC //ColorModel().getRandomColor()
         funFactLabelTV.text = randomF
@@ -32,8 +32,8 @@ class ViewController: UIViewController {
     @IBAction func showFunFactTV() {
         let dupeColor = funFactButtonTV.tintColor
         let dupeFact: String? = funFactLabelTV.text
-        let randomC = ColorModelTV().getRandomColorTV(dupeColor)
-        let randomF = FactModelTV().getRandomFactTV(dupeFact!)
+        let randomC = ColorModelTV().getRandomColorTV(dupeColor: dupeColor!)
+        let randomF = FactModelTV().getRandomFactTV(dupeFact: dupeFact!)
         view.backgroundColor = randomC
         funFactButtonTV.tintColor = randomC //ColorModel().getRandomColor()
         funFactLabelTV.text = randomF

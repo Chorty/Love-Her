@@ -27,10 +27,10 @@ struct FactModelTV {
     
     func getRandomFactTV(dupeFact: String) -> String {
         
-        var randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(facts.count)
+        var randomNumber = Int(arc4random_uniform(UInt32(facts.count)))
         while facts[randomNumber] == dupeFact {
             print("Dup Fact Func")
-            randomNumber = GKRandomSource.sharedRandom().nextIntWithUpperBound(facts.count)
+            randomNumber = Int(arc4random_uniform(UInt32(facts.count)))
         }
         return facts[randomNumber]
 }
