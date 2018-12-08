@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import GameKit
+
 
 class ViewController: UIViewController {
     
@@ -14,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var funFactLabel: UILabel!
     
     @IBOutlet weak var funFactButton: UIButton!
-    
+    @IBOutlet weak var funFactImage: UIImageView!
     
     let factModel = FactModel()
   
@@ -37,17 +39,27 @@ class ViewController: UIViewController {
     }
  
     
+
     
     
     @IBAction func showFunFact() {
 
         let dupeColor = funFactButton.tintColor
         let dupeFact: String? = funFactLabel.text
+        let dupeImage: UIImage? = funFactImage.image
+        //let dupeImage = funFactImage.
+        //let dupeImage = funFactImage.image?.imageAsset(named: "1")
+        
         let randomC = ColorModel().getRandomColor(dupeColor: dupeColor!)
         let randomF = FactModel().getRandomFact(dupeFact: dupeFact!)
+        let randomI = ImageModel().getRandomImage(dupeImage: dupeImage!)
         view.backgroundColor = randomC //ColorModel().getRandomColor(dupeColor)
         funFactButton.tintColor = randomC //ColorModel().getRandomColor()
         funFactLabel.text = randomF
+        funFactImage.image = randomI
+        //print("RandomI = \(String(describing: randomI.imageAsset)) dupeImage = \(dupeImage))")
+        //let randomI = FactModel.
+        
         //print(dupeColor)
         //print(randomC)
         //print(dupeFact)
