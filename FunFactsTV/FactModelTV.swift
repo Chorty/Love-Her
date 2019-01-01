@@ -10,7 +10,7 @@ import GameKit
 import UIKit
 
 struct FactModelTV {
-    let facts =  [
+    let factsTV =  [
         "I fell in love with you the moment you smiled on my kitchen counter.",
         "My heart has been yours since the very first night.",
         "I adore you, you crazy, beautiful, wonderful(but also sometimes quite odd nut but still my amazingly beautiful woman.",
@@ -25,14 +25,14 @@ struct FactModelTV {
     ]
     
     
-    func getRandomFactTV(dupeFact: String) -> String {
+    func getRandomFactTV(dupeFactTV: String) -> String {
         
-        var randomNumber = Int(arc4random_uniform(UInt32(facts.count)))
-        while facts[randomNumber] == dupeFact {
+        var randomNumberTV = Int(arc4random_uniform(UInt32(factsTV.count)))
+        while factsTV[randomNumberTV] == dupeFactTV {
             print("Dup Fact Func")
-            randomNumber = Int(arc4random_uniform(UInt32(facts.count)))
+            randomNumberTV = Int(arc4random_uniform(UInt32(factsTV.count)))
         }
-        return facts[randomNumber]
+        return factsTV[randomNumberTV]
 }
 
 

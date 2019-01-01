@@ -17,51 +17,65 @@
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="1920" height="1080"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I love you in these ways!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z5y-vR-YSu">
                                 <rect key="frame" x="801" y="68" width="318" height="37"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="37" id="vGt-9h-n1o"/>
+                                    <constraint firstAttribute="height" constant="37" id="vcs-vx-RqX"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-cN-KUf">
-                                <rect key="frame" x="841" y="567" width="238" height="86"/>
-                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
-                                <state key="normal" title="Click Me!"/>
-                                <connections>
-                                    <action selector="funFactButtonTVFunc" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="71D-vg-sdN"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioe-oq-8xn">
-                                <rect key="frame" x="217" y="173" width="1487" height="207"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1" translatesAutoresizingMaskIntoConstraints="NO" id="SXe-WQ-hdR">
+                                <rect key="frame" x="608" y="288" width="606" height="624"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="207" id="fCe-G2-My7"/>
+                                    <constraint firstAttribute="width" constant="516" id="iPn-5v-PeV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ioe-oq-8xn">
+                                <rect key="frame" x="33" y="113" width="1756" height="207"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="207" id="89I-dS-856"/>
                                 </constraints>
                                 <string key="text">You are born with 300 bones; by the time you are an adult you will have 206 how about after your read this we make it 207 bones in your body...... ;o)You are born with 300 bones; by the time you are an adult you will have 206 how about after your read this we make it 207 bones in your body...... ;o)</string>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="30"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Us4-cN-KUf">
+                                <rect key="frame" x="792" y="962" width="238" height="86"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="86" id="bpE-Ia-SPy"/>
+                                </constraints>
+                                <inset key="contentEdgeInsets" minX="40" minY="20" maxX="40" maxY="20"/>
+                                <state key="normal" title="Click Me!"/>
+                                <connections>
+                                    <action selector="funFactButtonTVFunc" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="71D-vg-sdN"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="z5y-vR-YSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="76W-Yd-zeJ"/>
-                            <constraint firstItem="z5y-vR-YSu" firstAttribute="centerX" secondItem="ioe-oq-8xn" secondAttribute="centerX" id="Pzf-vM-FKF"/>
-                            <constraint firstItem="Us4-cN-KUf" firstAttribute="centerX" secondItem="ioe-oq-8xn" secondAttribute="centerX" id="Son-A5-CXh"/>
-                            <constraint firstItem="ioe-oq-8xn" firstAttribute="top" secondItem="z5y-vR-YSu" secondAttribute="bottom" constant="68" id="kNf-GC-I3V"/>
-                            <constraint firstItem="z5y-vR-YSu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="vTW-27-CbC"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Us4-cN-KUf" secondAttribute="bottom" constant="367" id="zaq-zT-BUp"/>
+                            <constraint firstItem="Us4-cN-KUf" firstAttribute="top" secondItem="SXe-WQ-hdR" secondAttribute="bottom" constant="75" id="7oT-TH-akg"/>
+                            <constraint firstItem="SXe-WQ-hdR" firstAttribute="centerX" secondItem="Us4-cN-KUf" secondAttribute="centerX" id="99a-ur-Ojj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="ioe-oq-8xn" secondAttribute="trailing" constant="21" id="A14-V9-WUa"/>
+                            <constraint firstItem="ioe-oq-8xn" firstAttribute="top" secondItem="z5y-vR-YSu" secondAttribute="bottom" constant="8" symbolic="YES" id="BqL-7b-yjZ"/>
+                            <constraint firstItem="ioe-oq-8xn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-77" id="Otk-3l-fCN"/>
+                            <constraint firstItem="Us4-cN-KUf" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="QeZ-UK-sBX"/>
+                            <constraint firstItem="z5y-vR-YSu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Una-wP-tIh"/>
+                            <constraint firstItem="z5y-vR-YSu" firstAttribute="centerX" secondItem="SXe-WQ-hdR" secondAttribute="centerX" id="YGo-1P-4kR"/>
+                            <constraint firstItem="SXe-WQ-hdR" firstAttribute="top" secondItem="ioe-oq-8xn" secondAttribute="bottom" constant="68" id="nLH-yJ-Abr"/>
+                            <constraint firstItem="z5y-vR-YSu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="rhZ-aT-lFZ"/>
                         </constraints>
                     </view>
                     <size key="freeformSize" width="1920" height="1080"/>
                     <connections>
                         <outlet property="funFactButtonTV" destination="Us4-cN-KUf" id="bZr-Vf-J77"/>
+                        <outlet property="funFactImageTV" destination="SXe-WQ-hdR" id="b7O-cH-QbR"/>
                         <outlet property="funFactLabelTV" destination="ioe-oq-8xn" id="vIs-Pm-y0P"/>
                     </connections>
                 </viewController>
@@ -70,4 +84,7 @@
             <point key="canvasLocation" x="232" y="337"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1" width="3024" height="4032"/>
+    </resources>
 </document>

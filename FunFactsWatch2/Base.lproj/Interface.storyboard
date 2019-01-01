@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14113" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
     <device id="watch42" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="watchOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
         <!--InterF-->
@@ -14,13 +14,14 @@
             <objects>
                 <controller id="AgC-eL-Hgc" userLabel="InterF" customClass="FunInterfaceController" customModule="FunFactsWatch2_Extension">
                     <items>
-                        <label width="136" alignment="left" text="Love You" id="AZi-ZA-7Re"/>
-                        <label width="1" alignment="left" semanticContentAttribute="spatial" text="Label" textAlignment="left" numberOfLines="5" id="SB8-36-BEN"/>
+                        <label width="136" alignment="left" semanticContentAttribute="forceLeftToRight" text="Label" textAlignment="center" numberOfLines="5" id="eGh-vc-7qj"/>
+                        <imageView height="110" alignment="left" id="4ZV-Zy-0JQ"/>
                         <button width="1" height="37" alignment="left" title="Button" id="S0l-nj-vAS">
                             <connections>
                                 <action selector="showFunFactWatch" destination="AgC-eL-Hgc" id="Oky-aq-gy8"/>
                             </connections>
                         </button>
+                        <label width="136" alignment="left" text="Love You" id="AZi-ZA-7Re"/>
                     </items>
                     <variation key="default">
                         <mask key="items">
@@ -29,11 +30,12 @@
                     </variation>
                     <connections>
                         <outlet property="funFactButtonWatch" destination="S0l-nj-vAS" id="Roh-yb-iez"/>
-                        <outlet property="funFactLabelWatch" destination="SB8-36-BEN" id="Dmr-di-fkH"/>
+                        <outlet property="funFactImageWatch" destination="4ZV-Zy-0JQ" id="GRr-Es-XMY"/>
+                        <outlet property="funFactLabelWatch" destination="eGh-vc-7qj" id="ppX-Iw-1oT"/>
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="219.69230769230771" y="344.79487179487182"/>
+            <point key="canvasLocation" x="219.69230769230771" y="317.76923076923077"/>
         </scene>
     </scenes>
 </document>

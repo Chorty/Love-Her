@@ -12,17 +12,20 @@ class ViewControllerTV: UIViewController {
 
     @IBOutlet weak var funFactLabelTV: UILabel!
     @IBOutlet weak var funFactButtonTV: UIButton!
+    @IBOutlet weak var funFactImageTV: UIImageView!
     
     override func viewDidLoad() {
+        
+        
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        let dupeColor = funFactButtonTV.tintColor
-        let dupeFact: String? = funFactLabelTV.text
-        let randomC = ColorModelTV().getRandomColorTV(dupeColor: dupeColor!)
-        let randomF = FactModelTV().getRandomFactTV(dupeFact: dupeFact!)
-        view.backgroundColor = randomC
-        funFactButtonTV.tintColor = randomC //ColorModel().getRandomColor()
-        funFactLabelTV.text = randomF
+        let dupeColorTV = funFactButtonTV.tintColor
+        let dupeFactTV = funFactLabelTV.text
+        let randomCTV = ColorModelTV().getRandomColorTV(dupeColorTV: dupeColorTV!)
+        let randomFTV = FactModelTV().getRandomFactTV(dupeFactTV: dupeFactTV!)
+        view.backgroundColor = randomCTV
+        funFactButtonTV.tintColor = randomCTV //ColorModel().getRandomColor()
+        funFactLabelTV.text = randomFTV
     }
 
  
@@ -32,13 +35,16 @@ class ViewControllerTV: UIViewController {
     }
     
     @IBAction func funFactButtonTVFunc() {
-        let dupeColor = funFactButtonTV.tintColor
-        let dupeFact: String? = funFactLabelTV.text
-        let randomC = ColorModelTV().getRandomColorTV(dupeColor: dupeColor!)
-        let randomF = FactModelTV().getRandomFactTV(dupeFact: dupeFact!)
-        view.backgroundColor = randomC
-        funFactButtonTV.tintColor = randomC //ColorModel().getRandomColor()
-        funFactLabelTV.text = randomF
+        let dupeColorTV = funFactButtonTV.tintColor
+        let dupeFactTV: String? = funFactLabelTV.text
+        let dupeImageTV: UIImage = funFactImageTV.image ?? #imageLiteral(resourceName: "7")
+        let randomCTV = ColorModelTV().getRandomColorTV(dupeColorTV: dupeColorTV!)
+        let randomFTV = FactModelTV().getRandomFactTV(dupeFactTV: dupeFactTV!)
+        let randomITV = ImageModelTV().getRandomImageTV(dupeImageTV: dupeImageTV)
+        view.backgroundColor = randomCTV
+        funFactButtonTV.tintColor = randomCTV //ColorModel().getRandomColor()
+        funFactLabelTV.text = randomFTV
+        funFactImageTV.image = randomITV
         
     }
 }

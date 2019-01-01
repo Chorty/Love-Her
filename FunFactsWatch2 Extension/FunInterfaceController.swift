@@ -11,9 +11,11 @@ import Foundation
 
 
 class FunInterfaceController: WKInterfaceController {
+    //@IBOutlet var funFactLabelWatch: WKInterfaceLabel!
     @IBOutlet var funFactLabelWatch: WKInterfaceLabel!
     @IBOutlet var funFactButtonWatch: WKInterfaceButton!
     
+    @IBOutlet var funFactImageWatch: WKInterfaceImage!
     let factModelWatch = FactModelWatch()
     let colorModelWatch = ColorModelWatch()
     
@@ -21,21 +23,28 @@ class FunInterfaceController: WKInterfaceController {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        funFactLabelWatch.setText(factModelWatch.getRandomFactWatch())
+        //let dupeImageWatch: UIImage = funFactImageWatch.image
+        funFactImageWatch.setImage(ImageModelWatch().getRandomImageWatch())
         
     }
     
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
-        /* let dupeColorWatch = funFactButtonWatch.setTitle(funFactButtonWatch)
-        let dupeFactWatch: String? = funFactLabelWatch.text
-        let randomCWatch = ColorModelWatch().getRandomColorWatch(dupeColorWatch: dupeColorWatch!)
-        let randomFWatch = FactModelWatch().getRandomFactWatch(dupeFactWatch: dupeFactWatch!)
-        view.backgroundColor = randomCWatch //ColorModel().getRandomColor(dupeColor)
-        funFactButtonWatch.tintColor = randomCWatch //ColorModel().getRandomColor()
-        funFactLabelWatch.text = randomFWatch
+        //let dupeColorWatch = funFactButtonWatch.setTitle(funFactButtonWatch)
+        //init randomFWatch
         
-        */
+       // let randomFWatch: String
+        
+        
+        //let randomCWatch = ColorModelWatch().getRandomColorWatch(dupeColorWatch: dupeColorWatch!)
+        
+        //view.backgroundColor = randomCWatch //ColorModel().getRandomColor(dupeColor)
+        //funFactButtonWatch.tintColor = randomCWatch //ColorModel().getRandomColor()
+        //funFactLabelWatch.text = randomFWatch
+        
+        
     }
     
     override func didDeactivate() {
@@ -52,7 +61,10 @@ class FunInterfaceController: WKInterfaceController {
         //let randomFWatch = funFactLabelWatch().getRandomFactWatch(dupeFactWatch!)
         //self.funFactButtonWatch.backgroundColor = randomCWatch
         //funFactButtonWatch.tintColor = randomCWatch //ColorModel().getRandomColor()
-        funFactLabelWatch.setText(factModelWatch.getRandomFactWatch()) //.getRandomFactWatch(dupeFact!)))
+        let randomFWatch : String = factModelWatch.getRandomFactWatch()
+
+        funFactLabelWatch.setText(randomFWatch) //.getRandomFactWatch(dupeFact!)))
+        funFactImageWatch.setImage(ImageModelWatch().getRandomImageWatch())
         
         
     }

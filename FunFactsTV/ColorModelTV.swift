@@ -11,7 +11,7 @@ import GameKit
 
 
 struct ColorModelTV {
-    let colors = [
+    let colorsTV = [
         UIColor(red: 90/255.0, green: 187/255.0, blue: 181/255.0, alpha: 1.0), // teal color
         UIColor(red: 222/255.0, green: 171/255.0, blue: 66/255.0, alpha: 1.0), // yellow color
         UIColor(red: 223/255.0, green: 86/255.0, blue: 94/255.0, alpha: 1.0), // red color
@@ -21,16 +21,16 @@ struct ColorModelTV {
         UIColor(red: 85/255.0, green: 176/255.0, blue: 112/255.0, alpha: 1.0), // green color
     ]
     
-    func getRandomColorTV(dupeColor: UIColor) -> UIColor {
+    func getRandomColorTV(dupeColorTV: UIColor) -> UIColor {
         //let generator: RandomNumberGenerator
         //random().advancedBy(1, limit: colors.count)
         //var randomNumber = arc4rand //random_uniform(colors.count)
-        var randomNumber = Int(arc4random_uniform(UInt32(colors.count)))
-        while colors[randomNumber] == dupeColor {
-            print("Dup Func Color \(colors[randomNumber])")
-            randomNumber = Int(arc4random_uniform(UInt32(colors.count)))
+        var randomNumberTV = Int(arc4random_uniform(UInt32(colorsTV.count)))
+        while colorsTV[randomNumberTV] == dupeColorTV {
+            print("Dup Func Color \(colorsTV[randomNumberTV])")
+            randomNumberTV = Int(arc4random_uniform(UInt32(colorsTV.count)))
         }
-        return colors[randomNumber]
+        return colorsTV[randomNumberTV]
     }
     
 }

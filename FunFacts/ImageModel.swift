@@ -36,7 +36,6 @@ struct ImageModel {
         #imageLiteral(resourceName: "13"),
         #imageLiteral(resourceName: "4"),
         #imageLiteral(resourceName: "18"),
-        
     ]
 
 func getRandomImage(dupeImage: UIImage) -> UIImage {

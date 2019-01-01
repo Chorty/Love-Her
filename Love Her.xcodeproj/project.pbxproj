@@ -15,12 +15,14 @@
 		301A3E24213C2D780037CE0F /* FunFactsWatch2.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 301A3E07213C2D760037CE0F /* FunFactsWatch2.app */; };
 		302119C4213C9D6D006CF0F4 /* FactModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302119C3213C9D6D006CF0F4 /* FactModelWatch.swift */; };
 		302119C6213C9F79006CF0F4 /* ColorModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 302119C5213C9F79006CF0F4 /* ColorModelWatch.swift */; };
+		3051537921BC27F5004E8A7D /* ImageModelTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3051537821BC27F5004E8A7D /* ImageModelTV.swift */; };
 		306236661CB308B000D33F10 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 306236641CB308B000D33F10 /* Main.storyboard */; };
 		306236681CB308B100D33F10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 306236671CB308B100D33F10 /* Assets.xcassets */; };
 		306236711CB32C5800D33F10 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306236601CB308B000D33F10 /* AppDelegate.swift */; };
 		306236721CB32C5C00D33F10 /* ViewControllerTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306236621CB308B000D33F10 /* ViewControllerTV.swift */; };
 		306236741CB32CF000D33F10 /* ColorModelTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306236731CB32CF000D33F10 /* ColorModelTV.swift */; };
 		306236761CB32D4800D33F10 /* FactModelTV.swift in Sources */ = {isa = PBXBuildFile; fileRef = 306236751CB32D4800D33F10 /* FactModelTV.swift */; };
+		30C6240021C357A600B3455D /* ImageModelWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30C623FF21C357A600B3455D /* ImageModelWatch.swift */; };
 		30CEC158219D366700BF7324 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30CEC157219D366700BF7324 /* ImageModel.swift */; };
 		30D20AE81C6C01240057232C /* FactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D20AE71C6C01240057232C /* FactModel.swift */; };
 		30E67012214231160008F93E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30E67011214231160008F93E /* Assets.xcassets */; };
@@ -84,6 +86,7 @@
 		301A3E20213C2D780037CE0F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		302119C3213C9D6D006CF0F4 /* FactModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactModelWatch.swift; sourceTree = "<group>"; };
 		302119C5213C9F79006CF0F4 /* ColorModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorModelWatch.swift; sourceTree = "<group>"; };
+		3051537821BC27F5004E8A7D /* ImageModelTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModelTV.swift; sourceTree = "<group>"; };
 		3062365E1CB308B000D33F10 /* FunFactsTVW.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunFactsTVW.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		306236601CB308B000D33F10 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		306236621CB308B000D33F10 /* ViewControllerTV.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTV.swift; sourceTree = "<group>"; };
@@ -92,6 +95,7 @@
 		306236691CB308B100D33F10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		306236731CB32CF000D33F10 /* ColorModelTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorModelTV.swift; sourceTree = "<group>"; };
 		306236751CB32D4800D33F10 /* FactModelTV.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModelTV.swift; sourceTree = "<group>"; };
+		30C623FF21C357A600B3455D /* ImageModelWatch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModelWatch.swift; sourceTree = "<group>"; };
 		30CEC157219D366700BF7324 /* ImageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
 		30D20AE71C6C01240057232C /* FactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactModel.swift; sourceTree = "<group>"; };
 		30E67011214231160008F93E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -147,6 +151,7 @@
 				301A3E20213C2D780037CE0F /* Info.plist */,
 				302119C3213C9D6D006CF0F4 /* FactModelWatch.swift */,
 				302119C5213C9F79006CF0F4 /* ColorModelWatch.swift */,
+				30C623FF21C357A600B3455D /* ImageModelWatch.swift */,
 			);
 			path = "FunFactsWatch2 Extension";
 			sourceTree = "<group>";
@@ -161,6 +166,7 @@
 				306236691CB308B100D33F10 /* Info.plist */,
 				306236731CB32CF000D33F10 /* ColorModelTV.swift */,
 				306236751CB32D4800D33F10 /* FactModelTV.swift */,
+				3051537821BC27F5004E8A7D /* ImageModelTV.swift */,
 			);
 			path = FunFactsTV;
 			sourceTree = "<group>";
@@ -393,6 +399,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				302119C4213C9D6D006CF0F4 /* FactModelWatch.swift in Sources */,
+				30C6240021C357A600B3455D /* ImageModelWatch.swift in Sources */,
 				302119C6213C9F79006CF0F4 /* ColorModelWatch.swift in Sources */,
 				301A3E19213C2D770037CE0F /* FunInterfaceController.swift in Sources */,
 			);
@@ -402,6 +409,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3051537921BC27F5004E8A7D /* ImageModelTV.swift in Sources */,
 				306236721CB32C5C00D33F10 /* ViewControllerTV.swift in Sources */,
 				306236761CB32D4800D33F10 /* FactModelTV.swift in Sources */,
 				306236741CB32CF000D33F10 /* ColorModelTV.swift in Sources */,
